@@ -1,0 +1,66 @@
+<html>
+
+<head>
+
+    <title>Liver Patient Analysis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/1ibs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/prediction.css')}}">
+</head>
+
+<body>
+    <h1>Liver Disease Prediction</h1>
+    <form class="box" action="/login" method="post">
+        <table>
+            <tr>
+                <td>Gender : </td>
+                <td><input type="text" placeholder="Age" name="Age" required></td>
+                <td>
+                    <p><input type="text" placeholder="Gender : Male : 1, Female : 0" name="Gender" required></p>
+                </td>
+            </tr>
+            <tr>
+                <td>Direct Bilirubin : </td>
+                <td><input type="text" placeholder="Total_Bilirubin" name="Total_Bilirubin" required></td>
+                <td>
+                    <p><input type="text" placeholder="Direct_Bilirubin" name="Direct_Bilirubin" required></p>
+                </td>
+            </tr>
+            <tr>
+                <td>Alamine Aminotransferase : </td>
+                <td><input type="text" placeholder="Alkaline_Phosphotase" name="Alkaline_Phosphotase" required></td>
+                <td>
+                    <p><input type="text" placeholder="Alamine_Aminotransferas" name="Alamine_Aminotransferas" required>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>Total Protiens : </td>
+                <td><input type="text" placeholder="Aspartate_Aminotransferas" name="Aspartate_Aminotransferas"
+                        required></td>
+                <td>
+                    <p><input type="text" placeholder="Total_Proteins" name="Total_Proteins" required></p>
+                </td>
+            </tr>
+            <tr>
+                <td>Albumin and Globulin Ratio : </td>
+                <td><input type="text" placeholder="Albumin" name="Albumin" required></td>
+                <td>
+                    <p><input type="text" placeholder="Albumin_and_Globulin_Ratio" name="Albumin_and_Globulin_Ratio"
+                            required></p>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-left: 50%;">
+
+                    <input type="submit" value="PREDICT">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
