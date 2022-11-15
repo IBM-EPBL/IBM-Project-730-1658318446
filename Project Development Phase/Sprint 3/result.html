@@ -112,7 +112,10 @@ input[type=submit]:hover {
    
       
       <h2 ><p style="text-align: center;">Results:</p> </h2>
-    {% if prediction == 1%}
+      
+    
+    {% if y == 1%}
+    <div>
     <h1 style="color: red;">!!Chances of having Liver Disease is more, please consult a Doctor.</h1>
     <p style="text-align:center;"><img src="https://image.shutterstock.com/image-photo/consult-your-doctor-medical-reminder-260nw-189378512.jpg" alt="HTML" width="250" height="150"></p>
     <p><h1>FOR FREE DOCTOR CONSULTATION:  <a href="https://secondconsult.com/">Click here</h1> </a></p>
@@ -163,11 +166,14 @@ It’s best to eat them fresh or frozen, not juiced or dried.
   <li>Mechanism of action: coffee may reduce DNA damage, increase the clearance of infected cells, and slow the scarring process.</li>
 </ul>
     <br> 
-    
-    {% elif prediction == 0%}
+    </div>
+    {% elif y == 0%}
+    <div>
     <h2 style="color: blue;">No Worries!!! You don't have Liver Disease.</h2>
     <p style="text-align: center;"><img src="https://cdn.shopify.com/s/files/1/0038/0878/8544/files/Infographic_ExerciseForFattyLiver-2.jpg" alt="HTML" width="550" height="650"></p>
+    </div>
     {% endif %}
+
     
 
 </body>
