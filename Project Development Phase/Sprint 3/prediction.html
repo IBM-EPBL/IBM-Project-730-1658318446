@@ -8,12 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="prediction.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/prediction.css')}}">
 </head>
 
 <body>
     <h1>Liver Disease Prediction</h1>
-    <form class="box" action="home.html" method="post">
+    <form class="box" action="/login" method="post">
         <table>
             <tr>
                 <td>Gender : </td>
