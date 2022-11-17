@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 import pickle
 
-model = pickle.load(open('Liver_Disease_Model.pkl' , 'rb'))
+model = pickle.load(open('Liver_Disease_Model_Acc_80.pkl' , 'rb'))
 
 @app.route('/')
 def home():
